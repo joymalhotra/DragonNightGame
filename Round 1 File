@@ -1,0 +1,28 @@
+import pygame
+
+RUN = True
+def frame_1():
+    pygame.init()
+    screen = pygame.display.set_mode((400, 400))  # stores the screen, and when
+    # this function is called, on the backend, it results in a physical screen
+    # and if you store taht screen in a avariable, and you want it to ooccur
+    # continuously, you put it inside teh loop
+    #
+
+    # while RUN:
+    #     screen.fill((255, 255, 255))
+    #     pygame.display.update()
+    #
+    #     for event in pygame.event.get():
+    #
+    #         if event.type == pygame.QUIT:
+    #             pygame.quit()  # exits pygame
+    #
+    #             # exits the loop and the display, then shutdown
+    #             # as well, it's not right to just uninitialize all modules, that
+    #             # the surface by default has to end
+
+RUN = False
+frame_1()
+RUN = False
+print("Hello")
